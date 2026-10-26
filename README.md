@@ -2,6 +2,23 @@
 
 A demo digital invitation for a fictional Malaysian Chinese couple. It is a static site: plain HTML, CSS and JavaScript, with no build step and no dependencies beyond Google Fonts and the Google Maps embed.
 
+Every file sits at the top level, with no folders, so the whole site uploads in one drag-and-drop.
+
+| Files | What they are |
+| --- | --- |
+| `index.html` | The page |
+| `style.css` | All styling |
+| `main.js` | Behaviour: gate, video, countdown, gallery, RSVP, calendar, music, language |
+| `i18n.js` | Every piece of visible text, in English and 中文 |
+| `hero-*.avif` / `.webp`, `hero-*.mp4` / `.webm` | Hero photo and looping video (portrait for phones, landscape for desktop) |
+| `story-*`, `gallery-*` | Story and gallery photos, in several widths, AVIF with WebP fallback |
+| `texture-jacquard.*`, `peony-gold-360.*` | Burgundy brocade background and gold peony emblem |
+| `sample-qr.svg` | Placeholder DuitNow QR |
+| `placeholder-music.mp3` | Placeholder background music |
+| `og-cover.jpg` | WhatsApp / social link preview image |
+| `favicon.svg`, `apple-touch-icon.png` | Browser and home-screen icons |
+| `_headers` | Optional Cloudflare Pages settings |
+
 ## Preview locally
 
 From this folder, run any static server, for example:
@@ -12,9 +29,19 @@ npx --yes serve .
 
 Then open the address it prints. Double-clicking `index.html` also works for a quick look.
 
-## Deploy
+## Deploy: GitHub, then Cloudflare Pages
 
-Upload this whole folder to any static host (Netlify drop, Cloudflare Pages, Vercel, GitHub Pages, S3). `index.html` is the entry point.
+The site is 93 files, under GitHub's 100-file limit for a single browser upload.
+
+1. **GitHub:** create a new repository. On its page choose **uploading an existing file**, select all the unzipped files, drag them in, then **Commit changes**.
+2. **Cloudflare:** in the dashboard go to **Workers & Pages → Create → Pages → Connect to Git** and pick the repository. Use these settings:
+   - Framework preset: **None**
+   - Build command: leave empty
+   - Build output directory: `/`
+3. Deploy. Cloudflare gives you an address like `https://your-project.pages.dev`; a custom domain can be added later.
+4. In `index.html`, replace the five `https://your-domain.example` addresses with that real address and commit. Cloudflare redeploys on every commit, and the WhatsApp preview then shows the couple's photo.
+
+`_headers` is optional and only read by Cloudflare Pages, which uses it to add two security headers. Other static hosts ignore it.
 
 ## Page structure
 
@@ -35,19 +62,19 @@ The EN / 中文 toggle (top right) translates all visible text, alt text and lab
 | What | Where |
 | --- | --- |
 | Deployed URL for the WhatsApp / Open Graph preview (WhatsApp needs absolute image URLs) | `index.html`: every `https://your-domain.example` |
-| Date, times and map pin | `assets/js/main.js`: `WEDDING` config at the top |
+| Date, times and map pin | `main.js`: `WEDDING` config at the top |
 | Map embed | `index.html`: the `<iframe>` `src` inside `.map` |
-| Venue, schedule, dress code, parking and all copy (both languages) | `assets/js/i18n.js` |
+| Venue, schedule, dress code, parking and all copy (both languages) | `i18n.js` |
 | Bank details and copy buttons | `index.html`: the `.gift-card__details` block |
-| DuitNow QR | `assets/img/sample-qr.svg`; remove the "Sample only" stamp |
-| Photos and video | `assets/img/*` (AVIF + WebP at several widths) and `assets/video/*` (WebM + MP4) |
-| Background music | `assets/audio/placeholder-music.mp3` (a synthesised placeholder; use a licensed track) |
-| Your business name | `assets/js/i18n.js`: `footerBrand` (EN and 中文) |
-| "Sample invitation" fine print and sample wishes | `assets/js/i18n.js`: `footerFine`, `w1` to `w6` |
+| DuitNow QR | `sample-qr.svg`; remove the "Sample only" stamp in `index.html` |
+| Photos and video | the `hero-*`, `story-*` and `gallery-*` files (keep the same names, or update `index.html`) |
+| Background music | `placeholder-music.mp3` (a synthesised placeholder; use a licensed track) |
+| Your business name | `i18n.js`: `footerBrand` (EN and 中文) |
+| "Sample invitation" fine print and sample wishes | `i18n.js`: `footerFine`, `w1` to `w6` |
 
 ## Connect a real RSVP backend
 
-In `assets/js/main.js`, find the block marked **RSVP SUBMIT HANDLER (DEMO)**. Replace the body of `submitRsvp(data)` with a `fetch` POST to your endpoint (Google Apps Script, Formspree, Supabase or your own API) and return `{ ok: true }` on success. The form already validates its fields, shows a loading state and handles errors.
+In `main.js`, find the block marked **RSVP SUBMIT HANDLER (DEMO)**. Replace the body of `submitRsvp(data)` with a `fetch` POST to your endpoint (Google Apps Script, Formspree, Supabase or your own API) and return `{ ok: true }` on success. The form already validates its fields, shows a loading state and handles errors.
 
 `data` looks like:
 
@@ -57,7 +84,7 @@ In `assets/js/main.js`, find the block marked **RSVP SUBMIT HANDLER (DEMO)**. Re
 
 ## Performance and accessibility notes
 
-- Images are served as AVIF with WebP fallback, in 480 to 2560px widths, with 20px blur-up placeholders inlined. Below-the-fold images are lazy-loaded.
+- Images are served as AVIF with WebP fallback, in 480 to 1920px widths, with 20px blur-up placeholders inlined. Below-the-fold images are lazy-loaded.
 - The hero poster is preloaded per orientation. Video loads only after the page settles, is skipped when Save-Data or reduced motion is on, and pauses off-screen.
 - A typical first visit on a phone transfers about 1.4 MB from this site. Google Fonts and the map load separately.
 - `prefers-reduced-motion` removes the video, particles, parallax and reveal animations.
