@@ -15,8 +15,8 @@
   <meta property="og:title" content="Wei Jie &amp; Xin Yi are getting married">
   <meta property="og:description" content="Saturday, 12 December 2026 in Kuala Lumpur. Open your invitation and RSVP.">
   <meta property="og:url" content="https://your-domain.example/">
-  <meta property="og:image" content="https://your-domain.example/assets/og/og-cover.jpg">
-  <meta property="og:image:secure_url" content="https://your-domain.example/assets/og/og-cover.jpg">
+  <meta property="og:image" content="https://your-domain.example/og-cover.jpg">
+  <meta property="og:image:secure_url" content="https://your-domain.example/og-cover.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,24 +26,24 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Wei Jie &amp; Xin Yi are getting married">
   <meta name="twitter:description" content="Saturday, 12 December 2026 in Kuala Lumpur. Open your invitation and RSVP.">
-  <meta name="twitter:image" content="https://your-domain.example/assets/og/og-cover.jpg">
+  <meta name="twitter:image" content="https://your-domain.example/og-cover.jpg">
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&amp;family=Jost:wght@300..600&amp;family=Noto+Sans+SC:wght@400;500&amp;family=Noto+Serif+SC:wght@500;700&amp;display=swap">
 
   <link rel="preload" as="image" type="image/avif" media="(orientation: portrait)"
-        imagesrcset="assets/img/hero-portrait-640.avif 640w, assets/img/hero-portrait-960.avif 960w, assets/img/hero-portrait-1280.avif 1280w" imagesizes="100vw">
+        imagesrcset="hero-portrait-640.avif 640w, hero-portrait-960.avif 960w, hero-portrait-1280.avif 1280w" imagesizes="100vw">
   <link rel="preload" as="image" type="image/avif" media="(orientation: landscape)"
-        imagesrcset="assets/img/hero-landscape-960.avif 960w, assets/img/hero-landscape-1440.avif 1440w, assets/img/hero-landscape-1920.avif 1920w, assets/img/hero-landscape-2560.avif 2560w" imagesizes="100vw">
+        imagesrcset="hero-landscape-960.avif 960w, hero-landscape-1440.avif 1440w, hero-landscape-1920.avif 1920w" imagesizes="100vw">
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.replace("no-js", "js");</script>
-  <script src="assets/js/i18n.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
 <body>
   <!-- Shared SVG definitions: foil gradient, ornaments and line icons -->
@@ -134,11 +134,11 @@
     <div class="gate__bg" aria-hidden="true"></div>
     <div class="gate__reveal" aria-hidden="true">
       <picture>
-        <source media="(orientation: portrait)" type="image/avif" srcset="assets/img/hero-portrait-640.avif 640w, assets/img/hero-portrait-960.avif 960w, assets/img/hero-portrait-1280.avif 1280w" sizes="100vw">
-        <source media="(orientation: portrait)" type="image/webp" srcset="assets/img/hero-portrait-640.webp 640w, assets/img/hero-portrait-960.webp 960w, assets/img/hero-portrait-1280.webp 1280w" sizes="100vw">
-        <source type="image/avif" srcset="assets/img/hero-landscape-960.avif 960w, assets/img/hero-landscape-1440.avif 1440w, assets/img/hero-landscape-1920.avif 1920w, assets/img/hero-landscape-2560.avif 2560w" sizes="100vw">
-        <source type="image/webp" srcset="assets/img/hero-landscape-960.webp 960w, assets/img/hero-landscape-1440.webp 1440w, assets/img/hero-landscape-1920.webp 1920w, assets/img/hero-landscape-2560.webp 2560w" sizes="100vw">
-        <img src="assets/img/hero-landscape-1440.webp" width="2752" height="1536" alt="" decoding="async">
+        <source media="(orientation: portrait)" type="image/avif" srcset="hero-portrait-640.avif 640w, hero-portrait-960.avif 960w, hero-portrait-1280.avif 1280w" sizes="100vw">
+        <source media="(orientation: portrait)" type="image/webp" srcset="hero-portrait-640.webp 640w, hero-portrait-960.webp 960w, hero-portrait-1280.webp 1280w" sizes="100vw">
+        <source type="image/avif" srcset="hero-landscape-960.avif 960w, hero-landscape-1440.avif 1440w, hero-landscape-1920.avif 1920w" sizes="100vw">
+        <source type="image/webp" srcset="hero-landscape-960.webp 960w, hero-landscape-1440.webp 1440w, hero-landscape-1920.webp 1920w" sizes="100vw">
+        <img src="hero-landscape-1440.webp" width="2752" height="1536" alt="" decoding="async">
       </picture>
     </div>
     <svg class="gate__ring" aria-hidden="true"><use href="#ring"/></svg>
@@ -162,15 +162,15 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero__media">
         <picture class="hero__poster">
-          <source media="(orientation: portrait)" type="image/avif" srcset="assets/img/hero-portrait-640.avif 640w, assets/img/hero-portrait-960.avif 960w, assets/img/hero-portrait-1280.avif 1280w" sizes="100vw">
-          <source media="(orientation: portrait)" type="image/webp" srcset="assets/img/hero-portrait-640.webp 640w, assets/img/hero-portrait-960.webp 960w, assets/img/hero-portrait-1280.webp 1280w" sizes="100vw">
-          <source type="image/avif" srcset="assets/img/hero-landscape-960.avif 960w, assets/img/hero-landscape-1440.avif 1440w, assets/img/hero-landscape-1920.avif 1920w, assets/img/hero-landscape-2560.avif 2560w" sizes="100vw">
-          <source type="image/webp" srcset="assets/img/hero-landscape-960.webp 960w, assets/img/hero-landscape-1440.webp 1440w, assets/img/hero-landscape-1920.webp 1920w, assets/img/hero-landscape-2560.webp 2560w" sizes="100vw">
-          <img src="assets/img/hero-landscape-1440.webp" width="2752" height="1536" fetchpriority="high" decoding="async"
+          <source media="(orientation: portrait)" type="image/avif" srcset="hero-portrait-640.avif 640w, hero-portrait-960.avif 960w, hero-portrait-1280.avif 1280w" sizes="100vw">
+          <source media="(orientation: portrait)" type="image/webp" srcset="hero-portrait-640.webp 640w, hero-portrait-960.webp 960w, hero-portrait-1280.webp 1280w" sizes="100vw">
+          <source type="image/avif" srcset="hero-landscape-960.avif 960w, hero-landscape-1440.avif 1440w, hero-landscape-1920.avif 1920w" sizes="100vw">
+          <source type="image/webp" srcset="hero-landscape-960.webp 960w, hero-landscape-1440.webp 1440w, hero-landscape-1920.webp 1920w" sizes="100vw">
+          <img src="hero-landscape-1440.webp" width="2752" height="1536" fetchpriority="high" decoding="async"
                alt="Wei Jie and Xin Yi in their wedding attire in a candlelit hotel ballroom" data-i18n-attr="alt:heroAlt">
         </picture>
         <video class="hero__video" muted loop playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true" tabindex="-1"
-               data-portrait="assets/video/hero-portrait" data-landscape="assets/video/hero-landscape"></video>
+               data-portrait="hero-portrait" data-landscape="hero-landscape"></video>
         <canvas class="hero__sparkle" aria-hidden="true"></canvas>
         <div class="hero__shade" aria-hidden="true"></div>
       </div>
@@ -212,9 +212,9 @@
           <figure class="milestone__media">
             <div class="arch" style="--lqip:url(data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQBACdASoUABkAPu1ep06ppKMiMBgMATAdiWIAsOwKSioCriCZivnzAN+PAo8tgAD+6O3uM8vr92uFjCIv9jp3ok5nY1+wusBrHqKvV4IxTFkBJg1CDUbLhkS0xZhidrY+VQrCPqi6+ttdfxt50HYpWtzJOuAA)">
               <picture>
-                <source type="image/avif" srcset="assets/img/story-2017-rain-480.avif 480w, assets/img/story-2017-rain-800.avif 800w, assets/img/story-2017-rain-1200.avif 1200w" sizes="(min-width: 900px) 26rem, 80vw">
-                <source type="image/webp" srcset="assets/img/story-2017-rain-480.webp 480w, assets/img/story-2017-rain-800.webp 800w, assets/img/story-2017-rain-1200.webp 1200w" sizes="(min-width: 900px) 26rem, 80vw">
-                <img class="fade-img" src="assets/img/story-2017-rain-800.webp" width="800" height="993" loading="lazy" decoding="async"
+                <source type="image/avif" srcset="story-2017-rain-800.avif 800w, story-2017-rain-1200.avif 1200w" sizes="(min-width: 900px) 26rem, 80vw">
+                <source type="image/webp" srcset="story-2017-rain-800.webp 800w, story-2017-rain-1200.webp 1200w" sizes="(min-width: 900px) 26rem, 80vw">
+                <img class="fade-img" src="story-2017-rain-800.webp" width="800" height="993" loading="lazy" decoding="async"
                      alt="Xin Yi laughing under a clear umbrella while Wei Jie shakes rain from his sleeve beneath an old shophouse arcade at night" data-i18n-attr="alt:s1Alt">
               </picture>
             </div>
@@ -230,9 +230,9 @@
           <figure class="milestone__media">
             <div class="arch" style="--lqip:url(data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBQCdASoUABkAPu1oq08ppiOiMBgIATAdiWMAqPQMaVFaNcWikAJLatsvLnePzFJCTAD+Q931TLAlDZD/9GrKGb00QIcOepz1FqVPe1mmWa6RYULqc//nXY49bExBWpFlm2cKe+IHjzrUalJcO6QnHxXRdWfmUX7I0+y1wYwAAA==)">
               <picture>
-                <source type="image/avif" srcset="assets/img/story-2018-kopitiam-480.avif 480w, assets/img/story-2018-kopitiam-800.avif 800w, assets/img/story-2018-kopitiam-1200.avif 1200w" sizes="(min-width: 900px) 26rem, 80vw">
-                <source type="image/webp" srcset="assets/img/story-2018-kopitiam-480.webp 480w, assets/img/story-2018-kopitiam-800.webp 800w, assets/img/story-2018-kopitiam-1200.webp 1200w" sizes="(min-width: 900px) 26rem, 80vw">
-                <img class="fade-img" src="assets/img/story-2018-kopitiam-800.webp" width="800" height="993" loading="lazy" decoding="async"
+                <source type="image/avif" srcset="story-2018-kopitiam-800.avif 800w, story-2018-kopitiam-1200.avif 1200w" sizes="(min-width: 900px) 26rem, 80vw">
+                <source type="image/webp" srcset="story-2018-kopitiam-800.webp 800w, story-2018-kopitiam-1200.webp 1200w" sizes="(min-width: 900px) 26rem, 80vw">
+                <img class="fade-img" src="story-2018-kopitiam-800.webp" width="800" height="993" loading="lazy" decoding="async"
                      alt="Wei Jie pouring white coffee for Xin Yi at a marble kopitiam table with kaya toast" data-i18n-attr="alt:s2Alt">
               </picture>
             </div>
@@ -248,9 +248,9 @@
           <figure class="milestone__media">
             <div class="arch" style="--lqip:url(data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwBACdASoUABkAPu1qqk8ppiOiMBgIATAdiWIAnQA0a3hsW57+EvdXP/j3ybAAAP7tsiOeKLY/+kxYwSfDvfzPxo99dMKxy0C/SFr9vhZZ2V6ntFoyyQe5iVKMSJAtgy3h15XomBrElew5S0jswZ4GD6aEwAAA)">
               <picture>
-                <source type="image/avif" srcset="assets/img/story-2021-penang-480.avif 480w, assets/img/story-2021-penang-800.avif 800w, assets/img/story-2021-penang-1200.avif 1200w" sizes="(min-width: 900px) 26rem, 80vw">
-                <source type="image/webp" srcset="assets/img/story-2021-penang-480.webp 480w, assets/img/story-2021-penang-800.webp 800w, assets/img/story-2021-penang-1200.webp 1200w" sizes="(min-width: 900px) 26rem, 80vw">
-                <img class="fade-img" src="assets/img/story-2021-penang-800.webp" width="800" height="993" loading="lazy" decoding="async"
+                <source type="image/avif" srcset="story-2021-penang-800.avif 800w, story-2021-penang-1200.avif 1200w" sizes="(min-width: 900px) 26rem, 80vw">
+                <source type="image/webp" srcset="story-2021-penang-800.webp 800w, story-2021-penang-1200.webp 1200w" sizes="(min-width: 900px) 26rem, 80vw">
+                <img class="fade-img" src="story-2021-penang-800.webp" width="800" height="993" loading="lazy" decoding="async"
                      alt="The couple walking hand in hand along a wooden jetty at sunset in Penang" data-i18n-attr="alt:s3Alt">
               </picture>
             </div>
@@ -266,9 +266,9 @@
           <figure class="milestone__media">
             <div class="arch" style="--lqip:url(data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADwBACdASoUABkAPu1qrVCppaQiqAqpMB2JQBOmYAg1JaiuftIu6BcdVzHD0TjZnYAA/urYLkA9037B4WSnvm0I2gA3VOKwInFghkXs8SsN7Ocu4HeAJ3d72zoDgWL933XxYrM9Q7N4ShS9jZMuiaUXwASk/AAA)">
               <picture>
-                <source type="image/avif" srcset="assets/img/story-2025-proposal-480.avif 480w, assets/img/story-2025-proposal-800.avif 800w, assets/img/story-2025-proposal-1200.avif 1200w" sizes="(min-width: 900px) 26rem, 80vw">
-                <source type="image/webp" srcset="assets/img/story-2025-proposal-480.webp 480w, assets/img/story-2025-proposal-800.webp 800w, assets/img/story-2025-proposal-1200.webp 1200w" sizes="(min-width: 900px) 26rem, 80vw">
-                <img class="fade-img" src="assets/img/story-2025-proposal-800.webp" width="800" height="993" loading="lazy" decoding="async"
+                <source type="image/avif" srcset="story-2025-proposal-800.avif 800w, story-2025-proposal-1200.avif 1200w" sizes="(min-width: 900px) 26rem, 80vw">
+                <source type="image/webp" srcset="story-2025-proposal-800.webp 800w, story-2025-proposal-1200.webp 1200w" sizes="(min-width: 900px) 26rem, 80vw">
+                <img class="fade-img" src="story-2025-proposal-800.webp" width="800" height="993" loading="lazy" decoding="async"
                      alt="Wei Jie kneeling with a ring as Xin Yi covers her mouth in surprise among misty tea fields" data-i18n-attr="alt:s4Alt">
               </picture>
             </div>
@@ -284,9 +284,9 @@
           <figure class="milestone__media">
             <div class="arch" style="--lqip:url(data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABQBQCdASoUABkAPu1qr1CppaQiqAqpMB2JYwCw7A3ywQX2rJYWl1ie5yDGvzOHcYxqQ/gA4nx5sWHHrZz6QzNqD8lw4bTrcnVuCM+FeFN8pwdPVb3JSyJ7HQQRwjY0oXbfuL7nOsyNrXt6CZLffyOExcUwZ9dJZOKE6VS8AAA=)">
               <picture>
-                <source type="image/avif" srcset="assets/img/story-2026-betrothal-480.avif 480w, assets/img/story-2026-betrothal-800.avif 800w, assets/img/story-2026-betrothal-1200.avif 1200w" sizes="(min-width: 900px) 26rem, 80vw">
-                <source type="image/webp" srcset="assets/img/story-2026-betrothal-480.webp 480w, assets/img/story-2026-betrothal-800.webp 800w, assets/img/story-2026-betrothal-1200.webp 1200w" sizes="(min-width: 900px) 26rem, 80vw">
-                <img class="fade-img" src="assets/img/story-2026-betrothal-800.webp" width="800" height="993" loading="lazy" decoding="async"
+                <source type="image/avif" srcset="story-2026-betrothal-800.avif 800w, story-2026-betrothal-1200.avif 1200w" sizes="(min-width: 900px) 26rem, 80vw">
+                <source type="image/webp" srcset="story-2026-betrothal-800.webp 800w, story-2026-betrothal-1200.webp 1200w" sizes="(min-width: 900px) 26rem, 80vw">
+                <img class="fade-img" src="story-2026-betrothal-800.webp" width="800" height="993" loading="lazy" decoding="async"
                      alt="The couple seated beside red lacquered betrothal baskets of oranges and gifts" data-i18n-attr="alt:s5Alt">
               </picture>
             </div>
@@ -312,9 +312,9 @@
         <li data-reveal style="--i:0">
           <button type="button" class="masonry__item" data-base="gallery-studio" data-w="1856" data-h="2304" data-cap="g2Cap" data-alt="g2Alt" style="--lqip:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwBACdASoUABkAPt1ao02opSMiN/qoARAbiWUAxnwh4E5lmCPKkBZAiD1I8AD+9W6DmgwxyOhI3TU9ko0BOn2PELQQd3GKvP/b9M1i5xcbpORYxFHAEuZHIdyXmUyeUwQAAA==)">
             <picture>
-              <source type="image/avif" srcset="assets/img/gallery-studio-480.avif 480w, assets/img/gallery-studio-800.avif 800w, assets/img/gallery-studio-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <source type="image/webp" srcset="assets/img/gallery-studio-480.webp 480w, assets/img/gallery-studio-800.webp 800w, assets/img/gallery-studio-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <img class="fade-img" src="assets/img/gallery-studio-800.webp" width="800" height="993" loading="lazy" decoding="async"
+              <source type="image/avif" srcset="gallery-studio-480.avif 480w, gallery-studio-800.avif 800w, gallery-studio-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <source type="image/webp" srcset="gallery-studio-800.webp 800w, gallery-studio-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <img class="fade-img" src="gallery-studio-800.webp" width="800" height="993" loading="lazy" decoding="async"
                    alt="Xin Yi seated in a blush silk qipao with Wei Jie standing behind her in a tuxedo" data-i18n-attr="alt:g2Alt">
             </picture>
           </button>
@@ -322,9 +322,9 @@
         <li data-reveal style="--i:1">
           <button type="button" class="masonry__item" data-base="gallery-lanterns" data-w="1696" data-h="2528" data-cap="g3Cap" data-alt="g3Alt" style="--lqip:url(data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAQBQCdASoUAB4APu1ur1KppiQiqAgBMB2JZACdMoR5btAAUzFO4MIXztggow0T/sNgAP7add3tU4mZoyxpFMmBZhQKoqYK9T5+Lu23FeLT8EciQ/gftpYPsf9f6ipbjQ10FxJWLwL++RW+F1RwS8ry98FrwRgAgL5hy1LlBys9njI6t0KEVt5sAAA=)">
             <picture>
-              <source type="image/avif" srcset="assets/img/gallery-lanterns-480.avif 480w, assets/img/gallery-lanterns-800.avif 800w, assets/img/gallery-lanterns-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <source type="image/webp" srcset="assets/img/gallery-lanterns-480.webp 480w, assets/img/gallery-lanterns-800.webp 800w, assets/img/gallery-lanterns-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <img class="fade-img" src="assets/img/gallery-lanterns-800.webp" width="800" height="1192" loading="lazy" decoding="async"
+              <source type="image/avif" srcset="gallery-lanterns-480.avif 480w, gallery-lanterns-800.avif 800w, gallery-lanterns-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <source type="image/webp" srcset="gallery-lanterns-800.webp 800w, gallery-lanterns-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <img class="fade-img" src="gallery-lanterns-800.webp" width="800" height="1192" loading="lazy" decoding="async"
                    alt="The couple facing each other, foreheads close, beneath rows of glowing red lanterns" data-i18n-attr="alt:g3Alt">
             </picture>
           </button>
@@ -332,9 +332,9 @@
         <li data-reveal style="--i:2">
           <button type="button" class="masonry__item" data-base="gallery-tea-ceremony" data-w="1792" data-h="2400" data-cap="g1Cap" data-alt="g1Alt" style="--lqip:url(data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAQBQCdASoUABsAPulgpE2pJaMiMAwBIB0JZAC2yB6QDRRlJMvu0AqHJk7JnFbaSQQAAP7x4JmbSp33vgYSlqm9j5n2oZIb6OdxqTApDCxOHZBlbyeUVxF51D575UW3Ck3tjq0qxpEEMngR9wu0TlQRLynMZaxG80YZdatsdbDV34xNvzOGYa/teFQAAA==)">
             <picture>
-              <source type="image/avif" srcset="assets/img/gallery-tea-ceremony-480.avif 480w, assets/img/gallery-tea-ceremony-800.avif 800w, assets/img/gallery-tea-ceremony-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <source type="image/webp" srcset="assets/img/gallery-tea-ceremony-480.webp 480w, assets/img/gallery-tea-ceremony-800.webp 800w, assets/img/gallery-tea-ceremony-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <img class="fade-img" src="assets/img/gallery-tea-ceremony-800.webp" width="800" height="1071" loading="lazy" decoding="async"
+              <source type="image/avif" srcset="gallery-tea-ceremony-480.avif 480w, gallery-tea-ceremony-800.avif 800w, gallery-tea-ceremony-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <source type="image/webp" srcset="gallery-tea-ceremony-800.webp 800w, gallery-tea-ceremony-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <img class="fade-img" src="gallery-tea-ceremony-800.webp" width="800" height="1071" loading="lazy" decoding="async"
                    alt="Wei Jie and Xin Yi kneeling in traditional red and black attire, offering cups of tea" data-i18n-attr="alt:g1Alt">
             </picture>
           </button>
@@ -342,9 +342,9 @@
         <li data-reveal style="--i:3">
           <button type="button" class="masonry__item" data-base="gallery-skyline" data-w="2528" data-h="1696" data-cap="g6Cap" data-alt="g6Alt" style="--lqip:url(data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOj+ABgZow9Y+0guaCgAP7QwaaFYIKLT6yOvOIBU6f4oTL/lyptVl5HHSIitQY58J/V1CwyLpqECeaQAA==)">
             <picture>
-              <source type="image/avif" srcset="assets/img/gallery-skyline-480.avif 480w, assets/img/gallery-skyline-800.avif 800w, assets/img/gallery-skyline-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <source type="image/webp" srcset="assets/img/gallery-skyline-480.webp 480w, assets/img/gallery-skyline-800.webp 800w, assets/img/gallery-skyline-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <img class="fade-img" src="assets/img/gallery-skyline-800.webp" width="800" height="537" loading="lazy" decoding="async"
+              <source type="image/avif" srcset="gallery-skyline-480.avif 480w, gallery-skyline-800.avif 800w, gallery-skyline-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <source type="image/webp" srcset="gallery-skyline-800.webp 800w, gallery-skyline-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <img class="fade-img" src="gallery-skyline-800.webp" width="800" height="537" loading="lazy" decoding="async"
                    alt="The couple toasting with champagne on a rooftop overlooking the Kuala Lumpur skyline at dusk" data-i18n-attr="alt:g6Alt">
             </picture>
           </button>
@@ -352,9 +352,9 @@
         <li data-reveal style="--i:4">
           <button type="button" class="masonry__item" data-base="gallery-banquet" data-w="2528" data-h="1696" data-cap="g7Cap" data-alt="g7Alt" style="--lqip:url(data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoUAA0APu1iqk2ppaQiMAgBMB2JYgCdH8ACzRabU0ahp/wGwAD7oj/dX9Ka76ulyPbt0hU5DgXFLXDPn2C9EKYnc7VryuVQ9kcihYp+h0Q1Q+Bq6AAAAA==)">
             <picture>
-              <source type="image/avif" srcset="assets/img/gallery-banquet-480.avif 480w, assets/img/gallery-banquet-800.avif 800w, assets/img/gallery-banquet-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <source type="image/webp" srcset="assets/img/gallery-banquet-480.webp 480w, assets/img/gallery-banquet-800.webp 800w, assets/img/gallery-banquet-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <img class="fade-img" src="assets/img/gallery-banquet-800.webp" width="800" height="537" loading="lazy" decoding="async"
+              <source type="image/avif" srcset="gallery-banquet-480.avif 480w, gallery-banquet-800.avif 800w, gallery-banquet-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <source type="image/webp" srcset="gallery-banquet-800.webp 800w, gallery-banquet-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <img class="fade-img" src="gallery-banquet-800.webp" width="800" height="537" loading="lazy" decoding="async"
                    alt="A grand ballroom set for the banquet with peony centrepieces and crystal chandeliers" data-i18n-attr="alt:g7Alt">
             </picture>
           </button>
@@ -362,9 +362,9 @@
         <li data-reveal style="--i:5">
           <button type="button" class="masonry__item" data-base="gallery-bangles" data-w="1856" data-h="2304" data-cap="g4Cap" data-alt="g4Alt" style="--lqip:url(data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABQBQCdASoUABkAPu1sqlGppaOiqAqpMB2JYgCdMxMA2A1OkOz8hhk7brwYynb7hbawtqgA/uy9sa6LR5SuBzxBcl9jFO67aP62nNJbXHRjLvtRdlw6QKAzd7o/DTLXtdq4t32ayQITDumY2CpzQi6BX7q/pcufANrMw0tHb70ZwIvRi4UpwE+K7AAAAA==)">
             <picture>
-              <source type="image/avif" srcset="assets/img/gallery-bangles-480.avif 480w, assets/img/gallery-bangles-800.avif 800w, assets/img/gallery-bangles-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <source type="image/webp" srcset="assets/img/gallery-bangles-480.webp 480w, assets/img/gallery-bangles-800.webp 800w, assets/img/gallery-bangles-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <img class="fade-img" src="assets/img/gallery-bangles-800.webp" width="800" height="993" loading="lazy" decoding="async"
+              <source type="image/avif" srcset="gallery-bangles-480.avif 480w, gallery-bangles-800.avif 800w, gallery-bangles-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <source type="image/webp" srcset="gallery-bangles-800.webp 800w, gallery-bangles-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <img class="fade-img" src="gallery-bangles-800.webp" width="800" height="993" loading="lazy" decoding="async"
                    alt="Close-up of the bride's hands wearing gold dragon-phoenix bangles over the groom's hand" data-i18n-attr="alt:g4Alt">
             </picture>
           </button>
@@ -372,9 +372,9 @@
         <li data-reveal style="--i:6">
           <button type="button" class="masonry__item" data-base="gallery-staircase" data-w="1696" data-h="2528" data-cap="g5Cap" data-alt="g5Alt" style="--lqip:url(data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADQBQCdASoUAB4APu1sqlGppaOiqAqpMB2JQBOmUJCgAq3Ruwb82i8vA5k66YIPdSg6Woy/6NwAAP2cKDN7HSkfW9b0LKBKAlZ49FCz6h4Mv9gkZt3VCndfluPR8oG05U94xhPNuE/goRiuGssBlNs8MK96rt7vZnrBZDY16itSeZFdxzuBkOl56AA=)">
             <picture>
-              <source type="image/avif" srcset="assets/img/gallery-staircase-480.avif 480w, assets/img/gallery-staircase-800.avif 800w, assets/img/gallery-staircase-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <source type="image/webp" srcset="assets/img/gallery-staircase-480.webp 480w, assets/img/gallery-staircase-800.webp 800w, assets/img/gallery-staircase-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
-              <img class="fade-img" src="assets/img/gallery-staircase-800.webp" width="800" height="1192" loading="lazy" decoding="async"
+              <source type="image/avif" srcset="gallery-staircase-480.avif 480w, gallery-staircase-800.avif 800w, gallery-staircase-1200.avif 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <source type="image/webp" srcset="gallery-staircase-800.webp 800w, gallery-staircase-1200.webp 1200w" sizes="(min-width: 900px) 30vw, 48vw">
+              <img class="fade-img" src="gallery-staircase-800.webp" width="800" height="1192" loading="lazy" decoding="async"
                    alt="Xin Yi on a marble staircase in a long ivory gown, holding Wei Jie's hand" data-i18n-attr="alt:g5Alt">
             </picture>
           </button>
@@ -386,8 +386,8 @@
     <section class="section section--ivory details" id="details" aria-labelledby="details-title">
       <header class="section-head" data-reveal>
         <picture>
-          <source type="image/avif" srcset="assets/img/peony-gold-360.avif 360w, assets/img/peony-gold-720.avif 720w" sizes="84px">
-          <img class="details__emblem" src="assets/img/peony-gold-360.webp" srcset="assets/img/peony-gold-360.webp 360w, assets/img/peony-gold-720.webp 720w" sizes="84px" width="360" height="508" alt="" loading="lazy" decoding="async">
+          <source type="image/avif" srcset="peony-gold-360.avif">
+          <img class="details__emblem" src="peony-gold-360.webp" width="360" height="508" alt="" loading="lazy" decoding="async">
         </picture>
         <h2 id="details-title" data-i18n="detailsTitle">Wedding details</h2>
         <p data-i18n="detailsIntro">Everything you need for the evening.</p>
@@ -556,7 +556,7 @@
       <div class="gift-card">
         <!-- SAMPLE ONLY: replace sample-qr.svg and the account details below with the couple's real DuitNow QR. -->
         <div class="gift-card__qr">
-          <img src="assets/img/sample-qr.svg" width="200" height="200" alt="Sample QR code, not payable" data-i18n-attr="alt:qrAlt" loading="lazy">
+          <img src="sample-qr.svg" width="200" height="200" alt="Sample QR code, not payable" data-i18n-attr="alt:qrAlt" loading="lazy">
           <span class="sample-stamp" aria-hidden="true" data-i18n="sampleStamp">Sample only</span>
         </div>
         <dl class="gift-card__details">
@@ -629,6 +629,6 @@
   <div class="toast" role="status" aria-live="polite"></div>
 
   <!-- PLACEHOLDER music: a synthesised music-box loop. Replace with a licensed track (MP3, ~1 MB or less). -->
-  <audio id="bgm" src="assets/audio/placeholder-music.mp3" preload="none" loop></audio>
+  <audio id="bgm" src="placeholder-music.mp3" preload="none" loop></audio>
 </body>
 </html>
